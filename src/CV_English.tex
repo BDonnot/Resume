@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic} 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+
+%\makeatletter
+%
+%\renewcommand*{\makecvtitle}{%
+%  % recompute lengths (in case we are switching from letter to resume, or vice versa)
+%  \recomputecvlengths%
+%  % optional detailed information (pre-rendering)
+%  \def\phonesdetails{}%
+%  \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
+%    \protected@edef\phonesdetails{\phonesdetails\protect\makenewline\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
+%  \def\socialsdetails{}%
+%  \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
+%    \protected@edef\socialsdetails{\socialsdetails\protect\makenewline\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
+%  \newbox{\makecvtitledetailsbox}%
+%  \savebox{\makecvtitledetailsbox}{%
+%    \addressfont\color{color2}%
+%    \begin{tabular}[b]{@{}r@{}}%
+%      \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
+%        \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
+%        \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
+%      \phonesdetails% needs to be pre-rendered as loops and tabulars seem to conflict
+%      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
+%      \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+%      \socialsdetails% needs to be pre-rendered as loops and tabulars seem to conflict
+%      \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
+%    \end{tabular}
+%  }%
+%  % optional photo (pre-rendering)
+%  \newbox{\makecvtitlepicturebox}%
+%  \savebox{\makecvtitlepicturebox}{%
+%    \ifthenelse{\isundefined{\@photo}}%
+%    {}%
+%    {%
+%      \hspace*{\separatorcolumnwidth}%
+%      \color{color1}%
+%      \setlength{\fboxrule}{\@photoframewidth}%
+%      \ifdim\@photoframewidth=0pt%
+%        \setlength{\fboxsep}{0pt}\fi%
+%      \framebox{\includegraphics[width=\@photowidth]{\@photo}}}}%
+%  % name and title
+%  \newlength{\makecvtitledetailswidth}\settowidth{\makecvtitledetailswidth}{\usebox{\makecvtitledetailsbox}}%
+%  \newlength{\makecvtitlepicturewidth}\settowidth{\makecvtitlepicturewidth}{\usebox{\makecvtitlepicturebox}}%
+%  \ifthenelse{\lengthtest{\makecvtitlenamewidth=0pt}}% check for dummy value (equivalent to \ifdim\makecvtitlenamewidth=0pt)
+%    {\setlength{\makecvtitlenamewidth}{\textwidth-\makecvtitledetailswidth-\makecvtitlepicturewidth}}%
+%    {}%
+%  \begin{minipage}[b]{\makecvtitlenamewidth}%
+%    \namestyle{\@firstname\ \@lastname}%
+%    \ifthenelse{\equal{\@title}{}}{}{\\[1.25em]\titlestyle{\@title}}%
+%  \end{minipage}%
+%  \hfill%
+%  % optional detailed information (rendering)
+%  \llap{\usebox{\makecvtitledetailsbox}}% \llap is used to suppress the width of the box, allowing overlap if the value of makecvtitlenamewidth is forced
+%  % optional photo (rendering)
+%  \usebox{\makecvtitlepicturebox}\\[2.5em]%
+%  % optional quote
+%  \ifthenelse{\isundefined{\@quote}}%
+%    {}%
+%    {{\centering\begin{minipage}{\quotewidth}\centering\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
+%  \par
+%}% to avoid weird spacing bug at the first section if no blank line is left after \makecvtitle
+%\makeatother
+
+\setlength{\hintscolumnwidth}{3cm}
+
+%\photo[3cm]{BDonnot.jpg}
+\firstname{Benjamin \\}
+\familyname{DONNOT}           
+\address{35 rue Gabriel P\'ERI}{92~320 Ch\^atillon FRANCE}   
+\mobile{+33~6~12~08~13~43}                          
+\email{benjamin.donnot @ gmail.com}
+%\defincolor{ForestGreen}
+\moderncvcolor{green}  %couleur du thème au choix : blue, orange, green, red, purple, grey, black         
+
+%\cventry{année--année}{Diplôme}{École}{Ville}{\textit{Mention}}{Description}  % les arguments 3 à 6 peuvent rester vides
+%\cventry{année--année}{Poste occupé}{Employeur}{Ville}{}{Courte description des missions, 1 à 2 lignes.}
+
+\nopagenumbers{}                         
+\begin{document}
+\maketitle
+
+\vspace*{-1cm} 
+%{\large \textcolor{color2}{Objectif : recherche d'un CDI/stage de fin d'études en tant que \textit{Datascientist} à partir de \textit{mai 2015} (possibilité éventuelle de commencer à temps partiel à partir de février 2015).}}
+%\vspace*{-1cm} 
+\section{Education}
+\cventry{2014-2015}{3\textsuperscript{rd} year "Data Science", speciality \textit{Machine Learning}}{\href{http://www.ensae.fr/}{ENSAE (Paris Graduate School of Economics, Statistics and Finance), Top French engineer school in statistics}}{Malakoff, Paris Area, France}{}{Main classes : data mining, machine learning, bayesian statistic, computer (Scala,Pig \& Map-Reduce).}
+
+\cventry{2012-2013}{1\textsuperscript{st} \& 2\textsuperscript{nd} year applied mathematics}{\href{http://www.ensae.fr/}{ENSAE}}{}{}{Main classes : statistics, econometry, probability, finance, computer (C++, Python, R \& SAS).}
+
+%\cventry{2011-2012}{1\iere{} année mathématiques appliquées}{\href{http://www.ensae.fr/}{ENSAE}}{}{}{Principaux cours : statistiques, économie, informatique (Python, R, SAS).}
+
+\cventry{2008-2011}{CPGE}{\href{http://www4.ac-nancy-metz.fr/lyc-henri-poincare/}{Henri Poincaré Highschool}}{Nancy,France}{Two or Three-year intensive program in mathematics and physics preparing for the national competitive exam for entry to engineering schools.}{}
+
+\section{Work Experience}
+
+\cventry{Janvier 2015 \\ \textit{(6 months)}}{\textit{Data Scientist} Intern}{\href{http://www.rte-france.com/}{RTE France}}{Versailles, France}{}{Development and study (in c++ and R) of machine learning algorithm in order to better operate the french power grid.}
+%Développement en {\textit{R} \& C++} de méthodes d'apprentissage automatique pour la conduite du réseau électrique français.}%Antoine MAROT
+
+\cventry{Février 2015 \\ \textit{(7 months)}}{Consultant for l'ODJ}{\href{http://www.economie.gouv.fr/observatoire-des-jeux}{Observatoire Des Jeux (ODJ)}}{Paris, France}{}{Mission obtained through ENSAE J\textit{unior} \'Etudes. The objective was to build and study \textit{a priori}, different profil of players in oder to predict which one are possibly addicted.}
+%Dans le cadre de la Junior Entreprise de l'ENSAE : application de méthodes de "machines learning" (classification) afin de prédire \textit{a priori} quels étaient les profils de joueurs "à risques" à partir d'une base de données contenant des activités de jeu (langage utilisé : \textit{R}).}%Jean-Michel COSTES
+
+\cventry{Février 2014 \\ \textit{(6 months)}}{Stagiaire \textit{Data Scientist}}{\href{http://www.amadeus.com/web/amadeus/fr_FR-FR/Page-daccueil-Amadeus-Home/A-propos-dAmadeus/Notre-entreprise/1259071476540-Page-AMAD_DetailPpal}{Amadeus IT group}}{Sophia-Antipolis, France}{}{Application of machine learning algorithm (classification, clustering, prediction) for predicting the flow of passengers in any airport. Usage of \textit{R} and \textit{Python}}
+%Développement en {\textit{R} et \textit{Python}} d'une méthode générique de prévision des flux de passagers dans les aéroports.}%Xavier CALLENS
+
+
+\cventry{Août 2013 \\\textit{(6 months)}}{Quantitative Analyst Intern}{\href{http://www.hsbc.fr/1/2/hsbc-france/particuliers}{HSBC}}{Paris, France}{}{Work on local volatility surface and then on jumps (spot and volatility).}
+%Travaux sur des modèles à volatilité locale puis des modèles à sauts (volatilité et spot) sur les dérivés actions (\textit{R} pour les test, \textit{\textit{C++}} pour l'intégration en production).}%Olivier DUPONT, Nicolas GRANCHAMPS
+
+\cventry{Mars 2013 \\ \textit{(3 months)}}{Consultant}{\href{http://www.jouve.com/fr}{Jouve}}{Paris}{}{Mission obtained through ENSAE J\textit{unior} \'Etudes : detection et rationalization of bids searching, \textit{web-scraping}, supervised clustering of more than $2,5$ millions of bids. This study was made using \textit{Python}.}%Guillaume Arnal
+
+\cventry{Juillet 2012 \\ \textit{(2 months)}}{"Data base" intern}{\href{https://www.creditmutuel.fr/groupe/fr/index.html}{Confédération Nationale du Crédit Mutuel}}{Paris, France}{}{
+Writing of synthesis paper, study the customer/bank relationship. Usage of SQL and Excel.}
+%Stage d'ouverture au monde professionnel : rédaction de notes synthétiques, étude sur la relation banque/client. Utilisation de SQL puis de Excel.} %Yves CAUHAPE
+
+
+\section{Computer skills}
+\cventry{Languages}{Objects Oriented (\textit{C++} -advanced knowledge) \& Functionnal (\textit{OCaml} -knowledge)}{}{}{}{}
+
+
+\cventry{Statistical}{\textit{Python} (Scikit-Learn, Pandas) -niveau avancé \& \textit{R} (Rcpp, data.table)-advanced knowledge}{}{}{}{}
+
+\cventry{Others}{\LaTeX ; \textit{Pack Office}(VBA, Excel) \& SQL -knowledge}{}{}{}{}
+
+\section{Languages}
+\cventry{Anglais}{Working knowledge}{TOEIC 940/990 points (June 2013)}{}{}{}
+
+\cventry{Allemand}{Basic skills}{}{}{}{}
+
+\cventry{Italien}{Basic skills}{}{}{}{}
+
+
+\section{Extra curricular activities}
+\cventry{2015}{Co-organizer of \href{http://www.datasciencegame.com/}{"Data Science Game 2015"}}{}{}{}{This is an international students challenge. The students competitors were asked to solve a real data-scientist problem, given by Google. The main sponsors were \textit{Google Inc.} and \textit{Capgemini Consulting}. }
+%Il s'agit d'un challenge international étudiant sur le thème de la modélisation dans le cadre de données massives (\textit{"Big Data"}), parrainé par \textit{Google Inc.} et \href{https://www.capgemini.com/}{\textit{Capgemini}}.}
+
+\cventry{2012-2013 \\ \textit{(14 months)}}{vice treasurer of ENSAE J\textit{unior} \'Etudes}{}{}{}{This is the "junior enterprise" of ENSAE. It is a local non-profit organization entirely managed by students offering consulting services to the corporate. It allows students to work on real professional projects as well as managing an entreprise.}%experiencing unique learning opportunities by doing professional project work on the one side and managing small- to medium-sized enterprises on the other}
+%Il s'agit de la junior entreprise de l'ENSAE dont le but est de permettre aux étudiants de mettre en pratique les enseignements reçus à l'ENSAE en réalisant des études confiés par des clients.}
+%\cventry{2012-2013 \\ \textit{(10 mois)}}{Co-fondateur d'\textit{ENSAE Finance et Investissements} }{}{}{}{L'association a entre autre pour but de rapprocher le monde académique de celui de la finance par l'organisation de conférences ou "trading games".}
+
+\cventry{}{Natation}{ $\approx$ 3h / week}{}{}{}
+
+%\cventry{}{Randonnée et vélo en montagne}{}{}{}{}
+
+\end{document}
