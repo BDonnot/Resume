@@ -4,7 +4,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontawesome}
+%\moderncvstyle{casual}
+%\usepackage[scale=0.75]{geometry}
 
+%\includegraphics[height=9pt]{github}}\includegraphics[height=9pt]{linkedin}}\ }
+
+ 
 %\makeatletter
 %
 %\renewcommand*{\makecvtitle}{%
@@ -71,12 +77,17 @@
 %\photo[3cm]{BDonnot.jpg}
 \firstname{Benjamin \\}
 \familyname{DONNOT}           
-\address{35 rue Gabriel P\'ERI}{92~320 Ch\^atillon FRANCE}   
+\address{65 avenue de Paris}{92~320 Ch\^atillon FRANCE}   
 \mobile{+33~6~12~08~13~43}                          
 \email{benjamin.donnot @ gmail.com}
 %\defincolor{ForestGreen}
 \moderncvcolor{green}  %couleur du thème au choix : blue, orange, green, red, purple, grey, black         
-
+%\linkedin{http://co.linkedin.com/in/johndoe}
+%\github{http://github.com/jdoe}
+\extrainfo{%
+   \faLinkedin ~ \httplink{www.linkedin.com/in/benjamindonnot/} \\
+  \faGithub ~ \httplink{github.com/BDonnot}}
+  
 %\cventry{année--année}{Diplôme}{École}{Ville}{\textit{Mention}}{Description}  % les arguments 3 à 6 peuvent rester vides
 %\cventry{année--année}{Poste occupé}{Employeur}{Ville}{}{Courte description des missions, 1 à 2 lignes.}
 
@@ -88,17 +99,20 @@
 %{\large \textcolor{color2}{Objectif : recherche d'un CDI/stage de fin d'études en tant que \textit{Datascientist} à partir de \textit{mai 2015} (possibilité éventuelle de commencer à temps partiel à partir de février 2015).}}
 %\vspace*{-1cm} 
 \section{Education}
-\cventry{2014-2015}{3\textsuperscript{rd} year "Data Science", speciality \textit{Machine Learning}}{\href{http://www.ensae.fr/}{ENSAE (Paris Graduate School of Economics, Statistics and Finance), Top French engineer school in statistics}}{Malakoff, Paris Area, France}{}{Main classes : data mining, machine learning, bayesian statistic, computer (Scala,Pig \& Map-Reduce).}
+\cventry{2015-Now}{PhD in Machine Learning}{CIFRE agreement (Industrial agreement of learning/training by research) between \href{https://www.lri.fr/presentation_en.php}{LRI} lab (\href{https://www.inria.fr/en/}{INRIA}) and \href{http://www.rte-france.com/en}{RTE France} (French Transmission System Operator)}{Paris Area, France}{}{PhD entitled "Machine learning for a efficient and robust conduct of the Power Grid". It aims at applying state of the art machine learning algorithm (including deep learning and reinforcement learning) to better operate the grid in a context of fast growing intermittent renewable energy.}
 
-\cventry{2012-2013}{1\textsuperscript{st} \& 2\textsuperscript{nd} year applied mathematics}{\href{http://www.ensae.fr/}{ENSAE}}{}{}{Main classes : statistics, econometry, probability, finance, computer (C++, Python, R \& SAS).}
+\cventry{2011-2015}{Student in Data Science, speciality \textit{Machine Learning}}{\href{http://www.ensae.fr/}{ENSAE (Paris Graduate School of Economics, Statistics and Finance), Top French engineer school in statistics}}{Malakoff, Paris Area, France}{}{Main classes : data mining, machine learning, bayesian statistic, computer (C++, Python, R). Full-year internship in 2013-2014}
+
+%\cventry{2012-2013}{1\textsuperscript{st} \& 2\textsuperscript{nd} year applied mathematics}{\href{http://www.ensae.fr/}{ENSAE}}{}{}{Main classes : statistics, econometry, probability, finance, computer (C++, Python, R \& SAS).}
 
 %\cventry{2011-2012}{1\iere{} année mathématiques appliquées}{\href{http://www.ensae.fr/}{ENSAE}}{}{}{Principaux cours : statistiques, économie, informatique (Python, R, SAS).}
 
-\cventry{2008-2011}{CPGE}{\href{http://www4.ac-nancy-metz.fr/lyc-henri-poincare/}{Henri Poincaré Highschool}}{Nancy,France}{Two or Three-year intensive program in mathematics and physics preparing for the national competitive exam for entry to engineering schools.}{}
+\cventry{2008-2011}{CPGE}{\href{http://www4.ac-nancy-metz.fr/lyc-henri-poincare/}{Henri Poincaré Highschool}}{Nancy,France}{Two or Three-years intensive program in mathematics and physics preparing for the national competitive exams for entry to engineering schools.}{}
 
 \section{Work Experience}
+\cventry{2016-2017}{}{}{}{}{}
 
-\cventry{Janvier 2015 \\ \textit{(6 months)}}{\textit{Data Scientist} Intern}{\href{http://www.rte-france.com/}{RTE France}}{Versailles, France}{}{Development and study (in c++ and R) of machine learning algorithm in order to better operate the french power grid.}
+\cventry{Janvier 2015 \\ \textit{(6 months)}}{\textit{Data Scientist} Intern}{\href{http://www.rte-france.com/}{RTE France}}{Versailles, France}{}{Development and study (in c++ and R) of machine learning algorithm (mainly deep learning and reinforcement learning) in order to better operate the french power grid.}
 %Développement en {\textit{R} \& C++} de méthodes d'apprentissage automatique pour la conduite du réseau électrique français.}%Antoine MAROT
 
 \cventry{Février 2015 \\ \textit{(7 months)}}{Consultant for l'ODJ}{\href{http://www.economie.gouv.fr/observatoire-des-jeux}{Observatoire Des Jeux (ODJ)}}{Paris, France}{}{Mission obtained through ENSAE J\textit{unior} \'Etudes. The objective was to build and study \textit{a priori}, different profil of players in oder to predict which one are possibly addicted.}
@@ -108,13 +122,12 @@
 %Développement en {\textit{R} et \textit{Python}} d'une méthode générique de prévision des flux de passagers dans les aéroports.}%Xavier CALLENS
 
 
-\cventry{Août 2013 \\\textit{(6 months)}}{Quantitative Analyst Intern}{\href{http://www.hsbc.fr/1/2/hsbc-france/particuliers}{HSBC}}{Paris, France}{}{Work on local volatility surface and then on jumps (spot and volatility).}
+\cventry{Août 2013 \\\textit{(6 months)}}{Quantitative Analyst Intern}{\href{http://www.hsbc.fr/1/2/hsbc-france/particuliers}{HSBC}}{Paris, France}{}{Work on local volatility surface and then on jumps (both on spot and volatility).}
 %Travaux sur des modèles à volatilité locale puis des modèles à sauts (volatilité et spot) sur les dérivés actions (\textit{R} pour les test, \textit{\textit{C++}} pour l'intégration en production).}%Olivier DUPONT, Nicolas GRANCHAMPS
 
 \cventry{Mars 2013 \\ \textit{(3 months)}}{Consultant}{\href{http://www.jouve.com/fr}{Jouve}}{Paris}{}{Mission obtained through ENSAE J\textit{unior} \'Etudes : detection et rationalization of bids searching, \textit{web-scraping}, supervised clustering of more than $2,5$ millions of bids. This study was made using \textit{Python}.}%Guillaume Arnal
 
-\cventry{Juillet 2012 \\ \textit{(2 months)}}{"Data base" intern}{\href{https://www.creditmutuel.fr/groupe/fr/index.html}{Confédération Nationale du Crédit Mutuel}}{Paris, France}{}{
-Writing of synthesis paper, study the customer/bank relationship. Usage of SQL and Excel.}
+%\cventry{Juillet 2012 \\ \textit{(2 months)}}{"Data base" intern}{\href{https://www.creditmutuel.fr/groupe/fr/index.html}{Confédération Nationale du Crédit Mutuel}}{Paris, France}{}{Writing of synthesis paper, study the customer/bank relationship. Usage of SQL and Excel.}
 %Stage d'ouverture au monde professionnel : rédaction de notes synthétiques, étude sur la relation banque/client. Utilisation de SQL puis de Excel.} %Yves CAUHAPE
 
 
@@ -122,7 +135,7 @@ Writing of synthesis paper, study the customer/bank relationship. Usage of SQL a
 \cventry{Languages}{Objects Oriented (\textit{C++} -advanced knowledge) \& Functionnal (\textit{OCaml} -knowledge)}{}{}{}{}
 
 
-\cventry{Statistical}{\textit{Python} (Scikit-Learn, Pandas) -niveau avancé \& \textit{R} (Rcpp, data.table)-advanced knowledge}{}{}{}{}
+\cventry{Statistical}{\textit{Python} (Tensorflow, Scikit-Learn, Pandas, Boost-Python) -advanced knowledge \& \textit{R} (Rcpp, data.table)-advanced knowledge}{}{}{}{}
 
 \cventry{Others}{\LaTeX ; \textit{Pack Office}(VBA, Excel) \& SQL -knowledge}{}{}{}{}
 
@@ -138,11 +151,11 @@ Writing of synthesis paper, study the customer/bank relationship. Usage of SQL a
 \cventry{2015}{Co-organizer of \href{http://www.datasciencegame.com/}{"Data Science Game 2015"}}{}{}{}{This is an international students challenge. The students competitors were asked to solve a real data-scientist problem, given by Google. The main sponsors were \textit{Google Inc.} and \textit{Capgemini Consulting}. }
 %Il s'agit d'un challenge international étudiant sur le thème de la modélisation dans le cadre de données massives (\textit{"Big Data"}), parrainé par \textit{Google Inc.} et \href{https://www.capgemini.com/}{\textit{Capgemini}}.}
 
-\cventry{2012-2013 \\ \textit{(14 months)}}{vice treasurer of ENSAE J\textit{unior} \'Etudes}{}{}{}{This is the "junior enterprise" of ENSAE. It is a local non-profit organization entirely managed by students offering consulting services to the corporate. It allows students to work on real professional projects as well as managing an entreprise.}%experiencing unique learning opportunities by doing professional project work on the one side and managing small- to medium-sized enterprises on the other}
+%\cventry{2012-2013 \\ \textit{(14 months)}}{vice treasurer of ENSAE J\textit{unior} \'Etudes}{}{}{}{This is the "junior enterprise" of ENSAE. It is a local non-profit organization entirely managed by students offering consulting services to the corporate. It allows students to work on real professional projects as well as managing an entreprise.}%experiencing unique learning opportunities by doing professional project work on the one side and managing small- to medium-sized enterprises on the other}
 %Il s'agit de la junior entreprise de l'ENSAE dont le but est de permettre aux étudiants de mettre en pratique les enseignements reçus à l'ENSAE en réalisant des études confiés par des clients.}
 %\cventry{2012-2013 \\ \textit{(10 mois)}}{Co-fondateur d'\textit{ENSAE Finance et Investissements} }{}{}{}{L'association a entre autre pour but de rapprocher le monde académique de celui de la finance par l'organisation de conférences ou "trading games".}
 
-\cventry{}{Natation}{ $\approx$ 3h / week}{}{}{}
+\cventry{}{Natation}{ $\approx$ 3h / week, running and hiking (during vacation)}{}{}{}
 
 %\cventry{}{Randonnée et vélo en montagne}{}{}{}{}
 
